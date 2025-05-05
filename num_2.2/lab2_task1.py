@@ -15,10 +15,10 @@ class Student:
         self.group_number = new_group_number
 
     def info(self):
-        print(f"Фамилия студента: {self.first_name}\n",
-              f"Дата рождения студента: {self.birthday}\n",
-              f"Номер группы студента: {self.group_number}\n",
-              f"Успеваемость студента: {self.academic_performance}")
+        return ((f"Фамилия студента: {self.first_name}\n"
+              f"Дата рождения студента: {self.birthday}\n"
+              f"Номер группы студента: {self.group_number}\n"
+              f"Успеваемость студента: {self.academic_performance}"))
 
 def search():
     search_first_name = input("Введите фамилию студента которого хотите найти: ")
@@ -44,7 +44,7 @@ while True:
       "5 - поиск студента\n"
       "6 - завершить работу\n")))
     if i == 1:
-        student.info()
+        print(student.info())
     if i == 2:
         student.refactor_first_name(input("Введите новую фамилию студента: "))
         print(f"Новая фамилия: {student.first_name}")
