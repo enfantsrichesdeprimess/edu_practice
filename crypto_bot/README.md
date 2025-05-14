@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 3. Создайте файл .evm
 Файл должен быть следующего содержания:
-BOT_TOKEN=ваш_токен_бота
+BOT_TOKEN=ваш_токен_бота\n
 MONAD_RPC_URL=https://testnet-rpc.monad.xyz
 WALLET_ADDRESS=0xВашАдрес
 PRIVATE_KEY=ваш_приватный_ключ
