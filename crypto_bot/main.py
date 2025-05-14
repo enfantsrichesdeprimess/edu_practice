@@ -74,7 +74,7 @@ async def cmd_transactions(message: types.Message):
             result += f"Хэш: {tx['hash'].hex()}\n"
             result += f"От: {tx['from']}\n"
             result += f"Кому: {tx['to']}\n"
-            result += f"Сумма: {w3.from_wei(tx['value'], 'ether')} MONAD\n\n"
+            result += f"Сумма: {w3.from_wei(tx['value'], 'ether')} MON\n\n"
 
         await message.answer(result)
     except Exception as e:
